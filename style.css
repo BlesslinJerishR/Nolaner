@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+  background-color : #1D1E21;
+  font-family: 'Roboto', sans-serif !important;
+  overflow-x: hidden;
+}
+
+html{
+  overflow: scroll;
+}
+
+section{
+  position: relative;
+  left: 15%;
+  overflow: auto;
+  margin: 50px auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.block{
+  height: 550px;
+  width: 400px;
+  box-sizing: border-box;
+  color: #000000;
+  background-color: white;
+  float: left;
+  line-height: 155px;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+.absPos{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.letter{
+  background-color: #FFFFFF;
+}
+
+.imgs{
+  background-size: cover !important;
+}
+
+.block1 > .imgs{
+  background-image: url("frames/prestige.jpg");
+  left: 100%;
+  transition: 1s;
+}
+
+.block1:hover > .imgs{
+  left: 0px;
+}
+
+.block2 > .imgs{
+  background-image: url("frames/memento.jpg");
+  right: 100%;
+  transition: 1s;
+}
+
+.block2:hover > .imgs{
+  right: 0px;
+}
+
+.block3 > .imgs{
+  background-image: url("frames/interstellar.jpg");
+  top: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.block3:hover > .imgs{
+  top: 0px;
+}
+
+.block4 > .imgs{
+  background-image: url("frames/batman.jpg");
+  top: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.block4:hover > .imgs{
+  top: 0px;
+}
+
+.block5 > .imgs{
+  background-image: url("frames/tenet.jpg");
+  left: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.block5:hover > .imgs{
+  left: 0px;
+}
+
+.block6 > .imgs{
+  background-image: url("frames/inception.jpg");
+  right: 100%;
+  transition: 1s;
+}
+
+.block6:hover > .imgs{
+  right: 0px;
+}
